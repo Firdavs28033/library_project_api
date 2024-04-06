@@ -80,8 +80,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
-CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = (
+    'http://localhost:3000',
+    'http://localhost:8000',
+)
+CSRF_TRUSTED_ORIGINS = ['localhost:3000']
 
 TEMPLATES = [
     {
