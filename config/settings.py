@@ -73,7 +73,7 @@ ROOT_URLCONF = 'config.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES' : [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
@@ -83,8 +83,9 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = (
     'http://localhost:3000',
     'http://localhost:8000',
+    'https://web-production-b7f82.up.railway.app/',
 )
-CSRF_TRUSTED_ORIGINS = ['localhost:3000']
+CSRF_TRUSTED_ORIGINS = ['localhost:3000', 'https://web-production-b7f82.up.railway.app/']
 
 TEMPLATES = [
     {
