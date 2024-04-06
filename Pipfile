@@ -11,6 +11,7 @@ dj-rest-auth = "*"
 django-allauth = "*"
 gunicorn = "*"
 whitenoise = "*"
+django-cors-headers = "~=3.10.0"
 
 [dev-packages]
 
