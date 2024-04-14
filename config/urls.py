@@ -43,6 +43,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')), # authenticate
     path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),  # authenticate
     path('api/v1/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
-    path('loaderio-d4d1e8bd6e1bd3cee210d30b68c7d72e/', )
 
 ]
